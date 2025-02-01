@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- sora font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom color  -->
     <script>
         tailwind.config = {
           theme: {
@@ -114,7 +119,61 @@
         
     </header>
     <main>
-        
+        <section class="services my-36 mx-auto">
+            <h1 class="text-accent text-4xl mb-12 text-left ">Services</h1>
+            <div class="card-cotainer flex justify-center gap-4">
+                <div class="card bg-secondary w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="c2-assets/service.png"
+                        alt="24/7 service"
+                        class="rounded-full bg-white object-contain" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">24/7 Services</h2>
+                      <p>
+                        Our services are available 24/7. You can order anytime and we will deliver it to your doorstep.
+                      </p>                      
+                      <div class="card-actions">
+                      </div>
+                    </div>
+                </div>
+                <div class="card bg-secondary w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="c2-assets/delivery.png"
+                        alt="Fast Delivery"
+                        class="rounded-full bg-white  overflow-hidden" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Fast Delivery</h2>
+                      <p>
+                        We provide fast delivery services. You can get your order within 24 hours.
+                      </p>                      
+                      <div class="card-actions">
+                      </div>
+                    </div>
+                </div>
+                <div class="card bg-secondary w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="c2-assets/healthy.png"
+                        alt="Healthy Products"
+                        class="rounded-full bg-white" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Healthy Products</h2>
+                      <p>
+                        We provide fresh and healthy products. Our products are sourced from local farmers and are organic.
+                      </p>                      
+                      <div class="card-actions">
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products my-36 mx-auto"></section>
+            
     </main>
     <footer>
 
