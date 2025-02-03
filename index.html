@@ -1,183 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- sora font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- daisy ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- custom color  -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'accent': '#179800',
-                'secondary': '#efebe3',
-
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: "#179800",
+              secondary: "#efebe3",
+            },
+          },
+        },
+      };
+    </script>
     <style>
-        
-        .sora {
-            font-family: "Sora", serif;
-        }
+      .sora {
+        font-family: "Sora", serif;
+      }
     </style>
-</head>
-<body class="sora">
-    <header class="bg-gradient-to-t from-secondary to-white w-full mb-">
-        <section class="navmenu ">
-            <div class="navbar hidden sm:flex justify-between max-w-7xl md:container mx-auto text-xl">
-                <div class=" navbar-start">
-                    <img src="c2-assets/logo-header.png" alt="page logo">
-                </div>
-                <div class="navbar-center">
-                    <ul class="flex">
-                        <li>
-                          <a href="#" class="btn btn-ghost">Product</a>
-                        </li>
-                        <li>
-                          <a href="#" class="btn btn-ghost">Services</a>
-                        </li>
-                        <li>
-                          <a href="#" class="btn btn-ghost">Contact Us</a>
-                        </li>
-                      </ul>
-                </div>
-                <div class="navbar-end flex gap-3">
-                    
-                  <button class="btn btn-ghost btn-circle">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                  </button>
-                  <button class="btn btn-ghost btn-circle">
-                    <div class="indicator">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                          </svg>
-                    </div>
-                  </button>
-                  <button class="btn btn-outline btn-success btn-sm">login</button>
-                  <button class="btn bg-accent text-white btn-sm">Register</button>
-                </div>
+  </head>
+  <body class="sora">
+    <header class="bg-gradient-to-t from-secondary to-white w-full">
+      <section class="navmenu">
+        <div
+          class="navbar hidden sm:flex justify-between max-w-7xl md:container mx-auto text-xl"
+        >
+          <div class="navbar-start">
+            <img src="c2-assets/logo-header.png" alt="page logo" />
+          </div>
+          <div class="navbar-center">
+            <ul class="flex">
+              <li>
+                <a href="#" class="btn btn-ghost">Product</a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-ghost">Services</a>
+              </li>
+              <li>
+                <a href="#" class="btn btn-ghost">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end flex gap-3">
+            <button class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+            <button class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  />
+                </svg>
               </div>
-              <div class="navbar-mobile sm:hidden flex justify-between">
-                <img src="c2-assets/logo-footer.png" alt="page logo">
-                
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                    <button class="btn btn-square btn-ghost">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
+            </button>
+            <button class="btn btn-outline btn-success btn-sm">login</button>
+            <button class="btn bg-accent text-white btn-sm">Register</button>
+          </div>
+        </div>
+        <div class="navbar-mobile sm:hidden flex justify-between">
+          <img src="c2-assets/logo-footer.png" alt="page logo" />
+
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <button class="btn btn-square btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="hero">
+        <div class="hero w-full">
+          <div class="hero-content text-center pb-0">
+            <div class="max-w-3xl mx-auto">
+              <h1 class="text-5xl font-bold">
+                Freshness <span class="text-accent">You Can Count</span> On,
+                Prices You’ll Love!
+              </h1>
+              <p class="py-6">
+                Shop your daily essentials at unbeatable prices. From fresh
+                produce to pantry staples, we’ve got you covered every day!
+              </p>
+              <img
+                src="c2-assets/hero-vegetables.png"
+                alt="hero image"
+                class="w-full mb-0"
+              />
             </div>
-        </section>
-        <section class="hero">
-            <div class="hero w-full">
-                <div class="hero-content text-center pb-0">
-                  <div class="max-w-3xl mx-auto">
-                    <h1 class="text-5xl font-bold">Freshness <span class="text-accent">You Can
-                        Count</span> On, Prices You’ll Love! </h1>
-                    <p class="py-6">
-                        Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
-                    </p>
-                    <img src="c2-assets/hero-vegetables.png" alt="hero image" class="w-full mb-0">
-                  </div>
-                </div>
-              </div>
-        </section>
-        
+          </div>
+        </div>
+      </section>
     </header>
     <main>
-        <section class="services p-36 mx-auto">
-            <h1 class="text-accent text-4xl mb-12 text-left ">Services</h1>
-            <div class="card-cotainer flex justify-center gap-4">
-                <div class="card bg-secondary w-96 shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img
-                        src="c2-assets/service.png"
-                        alt="24/7 service"
-                        class="rounded-full bg-white object-contain" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">24/7 Services</h2>
-                      <p>
-                        Our services are available 24/7. You can order anytime and we will deliver it to your doorstep.
-                      </p>                      
-                      <div class="card-actions">
-                      </div>
-                    </div>
-                </div>
-                <div class="card bg-secondary w-96 shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img
-                        src="c2-assets/delivery.png"
-                        alt="Fast Delivery"
-                        class="rounded-full bg-white  overflow-hidden" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Fast Delivery</h2>
-                      <p>
-                        We provide fast delivery services. You can get your order within 24 hours.
-                      </p>                      
-                      <div class="card-actions">
-                      </div>
-                    </div>
-                </div>
-                <div class="card bg-secondary w-96 shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img
-                        src="c2-assets/healthy.png"
-                        alt="Healthy Products"
-                        class="rounded-full bg-white" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Healthy Products</h2>
-                      <p>
-                        We provide fresh and healthy products. Our products are sourced from local farmers and are organic.
-                      </p>                      
-                      <div class="card-actions">
-                      </div>
-                    </div>
-                </div>
+      <section class="services p-36 mx-auto">
+        <h1 class="text-accent text-4xl mb-12 text-left">Services</h1>
+        <div class="card-cotainer flex justify-center gap-4">
+          <div class="card bg-secondary w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="c2-assets/service.png"
+                alt="24/7 service"
+                class="rounded-full bg-white object-contain"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">24/7 Services</h2>
+              <p>
+                Our services are available 24/7. You can order anytime and we
+                will deliver it to your doorstep.
+              </p>
+              <div class="card-actions"></div>
             </div>
-        </section>
-        
-            
-    </main>
-    <footer>
+          </div>
+          <div class="card bg-secondary w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="c2-assets/delivery.png"
+                alt="Fast Delivery"
+                class="rounded-full bg-white overflow-hidden"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Fast Delivery</h2>
+              <p>
+                We provide fast delivery services. You can get your order within
+                24 hours.
+              </p>
+              <div class="card-actions"></div>
+            </div>
+          </div>
+          <div class="card bg-secondary w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="c2-assets/healthy.png"
+                alt="Healthy Products"
+                class="rounded-full bg-white"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Healthy Products</h2>
+              <p>
+                We provide fresh and healthy products. Our products are sourced
+                from local farmers and are organic.
+              </p>
+              <div class="card-actions"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    </footer>
-    
-</body>
+      <section class="products bg-secondary p-36">
+        <h1 class="text-accent text-4xl mb-12 text-left">Popular Products</h1>
+        <!-- promotional card  -->
+        <div class="flex gap-3">
+          <div class="card bg-gradient-to-br from-accent to-white max-w-md shadow-l">
+            <div class="card-body pb-0">
+              <h2 class="card-title text-white">30% off</h2>
+              <p class="text-white max-w-64">
+                Get 30% off on all vegetables. Offer valid till 31st December.
+              </p>
+            </div>
+            <div class="card-actions justify-start ">
+              <div class="card-actions justify-start p-8 pt-4">
+                <button class="btn">Buy Now</button>
+              </div>
+              <figure>
+                <img
+                  src="c2-assets/vegetable-offer.png"
+                  alt="veg-offer"
+                  class="bottom-0 right-0"
+                />
+              </figure>
+            </div>
+          </div>
+          <!-- grid images -->
+          
+          <div class="grid grid-cols-3 gap-3 flex-1">
+            <!-- ONION  -->
+            <div class="card flex flex-row items-center bg-white shadow-xl">
+              <img
+                  src="c2-assets/onion.png"
+                  alt="onion"
+                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+              <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
+                <div class="flex justify-start items-center gap-2 ">
+                  <span class="text-yellow-500">★ </span> 4.5
+                </div>
+                <h2 class="card-title text-xl ">Onion 1 KG</h2>
+                <p class="text-left ">$39.99</p>
+              </div>  
+            </div>
+
+            <!-- tomato  -->
+            <div class="card flex flex-row items-center bg-white shadow-xl">
+              <img
+                  src="c2-assets/tomato.png"
+                  alt="tomato"
+                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+              <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
+                <div class="flex justify-start items-center gap-2 ">
+                  <span class="text-yellow-500">★ </span> 4.5
+                </div>
+                <h2 class="card-title text-xl ">TOMATO 500 g</h2>
+                <p class="text-left ">$34.99</p>
+              </div>  
+            </div>
+
+            <!-- potato  -->
+            <div class="card flex flex-row items-center bg-white shadow-xl">
+              <img
+                  src="c2-assets/onion.png"
+                  alt="onion"
+                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+              <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
+                <div class="flex justify-start items-center gap-2 ">
+                  <span class="text-yellow-500">★ </span> 4.5
+                </div>
+                <h2 class="card-title text-xl ">POTATO 1 KG</h2>
+                <p class="text-left ">$29.99</p>
+              </div>  
+            </div>
+            
+            <!-- tomato  -->
+            <div class="card flex flex-row items-center bg-white shadow-xl">
+              <img
+                  src="c2-assets/tomato.png"
+                  alt="tomato"
+                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+              <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
+                <div class="flex justify-start items-center gap-2 ">
+                  <span class="text-yellow-500">★ </span> 4.5
+                </div>
+                <h2 class="card-title text-xl ">TOMATO 500 g</h2>
+                <p class="text-left ">$34.99</p>
+              </div>  
+            </div>
+
+            <!-- ONION  -->
+            <div class="card flex flex-row items-center bg-white shadow-xl">
+              <img
+                  src="c2-assets/onion.png"
+                  alt="onion"
+                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+              <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
+                <div class="flex justify-start items-center gap-2 ">
+                  <span class="text-yellow-500">★ </span> 4.5
+                </div>
+                <h2 class="card-title text-xl ">Onion 1 KG</h2>
+                <p class="text-left ">$39.99</p>
+              </div>  
+            </div>
+
+            <!-- potato  -->
+            <div class="card flex flex-row items-center bg-white shadow-xl">
+              <img
+                  src="c2-assets/onion.png"
+                  alt="onion"
+                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+              <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
+                <div class="flex justify-start items-center gap-2 ">
+                  <span class="text-yellow-500">★ </span> 4.5
+                </div>
+                <h2 class="card-title text-xl ">POTATO 1 KG</h2>
+                <p class="text-left ">$29.99</p>
+              </div>  
+            </div>
+
+            <!-- ONION  -->
+            <div class="card flex flex-row items-center bg-white shadow-xl">
+              <img
+                  src="c2-assets/onion.png"
+                  alt="onion"
+                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+              <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
+                <div class="flex justify-start items-center gap-2 ">
+                  <span class="text-yellow-500">★ </span> 4.5
+                </div>
+                <h2 class="card-title text-xl ">Onion 1 KG</h2>
+                <p class="text-left ">$39.99</p>
+              </div>  
+            </div>
+
+            <!-- potato  -->
+            <div class="card flex flex-row items-center bg-white shadow-xl">
+              <img
+                  src="c2-assets/onion.png"
+                  alt="onion"
+                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+              <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
+                <div class="flex justify-start items-center gap-2 ">
+                  <span class="text-yellow-500">★ </span> 4.5
+                </div>
+                <h2 class="card-title text-xl ">POTATO 1 KG</h2>
+                <p class="text-left ">$29.99</p>
+              </div>  
+            </div>
+
+            <!-- potato  -->
+            <div class="card flex flex-row items-center bg-white shadow-xl">
+              <img
+                  src="c2-assets/onion.png"
+                  alt="onion"
+                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+              <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
+                <div class="flex justify-start items-center gap-2 ">
+                  <span class="text-yellow-500">★ </span> 4.5
+                </div>
+                <h2 class="card-title text-xl ">POTATO 1 KG</h2>
+                <p class="text-left ">$29.99</p>
+              </div>  
+            </div>
+
+
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
