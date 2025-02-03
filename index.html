@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
-
+    <!-- poppin font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- daisy ui -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
@@ -28,14 +31,22 @@
             colors: {
               accent: "#179800",
               secondary: "#efebe3",
+              arrival1: "#115414",
+              arrival2: "#102861",
+              arrival1Title: "#63B76D",
+              arrival2Title: "#2A4D97",
             },
           },
         },
       };
     </script>
+    
     <style>
       .sora {
         font-family: "Sora", serif;
+      }
+      .poppins{
+        font-family: "Poppins", serif;
       }
     </style>
   </head>
@@ -206,7 +217,7 @@
       <section class="products bg-secondary p-36">
         <h1 class="text-accent text-4xl mb-12 text-left">Popular Products</h1>
         <!-- promotional card  -->
-        <div class="flex gap-3">
+        <div class="sm:flex gap-3">
           <div class="card bg-gradient-to-br from-accent to-white max-w-md shadow-l">
             <div class="card-body pb-0">
               <h2 class="card-title text-white">30% off</h2>
@@ -229,7 +240,7 @@
           </div>
           <!-- grid images -->
           
-          <div class="grid grid-cols-3 gap-3 flex-1">
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 flex-1">
             <!-- ONION  -->
             <div class="card flex flex-row items-center bg-white shadow-xl">
               <img
@@ -364,10 +375,39 @@
                 <p class="text-left ">$29.99</p>
               </div>  
             </div>
-
-
         </div>
       </section>
+
+      <!-- arrivals and offers -->
+      <section class="offers p-36 mx-auto text-white mb-96 poppins" >
+        <h1 class="text-accent text-4xl mb-12 text-left">Arrival & Offers</h1>
+
+        <div class="flex justify-center gap-5">
+          <div class="card bg-arrival1 flex flex-1 flex-row text-left gap ">
+            <div class="flex-1 py-12 pl-10">
+              <img src="c2-assets/dawat-logo.png" alt="dawat logo"class="max-w-62"/>
+            <button class="rounded-3xl px-8 text-2xl bg-arrival1Title py-4 my-7 px-auto">Cook Exotic Dishes</button>
+            <p class="text-5xl">UP to <span class="font-bold">20% OFF</span></p>
+            </div>
+            <div class="flex flex-end items-end">
+              <img src="c2-assets/dawat-mock-up.png" alt="india gate rice" class=" mt-8 size-fit"/>
+            </div>
+          </div>
+
+          <div class="card bg-arrival2 flex max-w-lg flex-row text-left gap ">
+            <div class="flex-1 py-12 pl-10">
+              <img src="c2-assets/india-gate-logo.png" alt="dawat logo"class="max-w-24"/>
+            <button class="rounded-3xl px-8 text-2xl bg-arrival2Title py-4 my-7 px-auto">worlds no.1 rice</button>
+            <p class="text-4xl">UP to <span class="font-bold">40% OFF</span></p>
+            </div>
+            <div class="flex flex-end items-end">
+              <img src="c2-assets/india-gate-mock-up.png" alt="india gate rice" class="mt-5 mr-3 size-fit"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
     </main>
     <footer></footer>
   </body>
