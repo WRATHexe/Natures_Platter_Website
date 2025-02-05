@@ -70,7 +70,10 @@
                 <a href="#" class="btn btn-ghost">Product</a>
               </li>
               <li>
-                <a href="#" class="btn btn-ghost">Services</a>
+                <a href="#" class="btn btn-ghost"><span class="relative flex h-3 w-3">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+                </span>Services</a>
               </li>
               <li>
                 <a href="#" class="btn btn-ghost">Contact Us</a>
@@ -79,7 +82,7 @@
           </div>
           <div class="navbar-end flex gap-3">
             <button class="btn btn-ghost btn-circle">
-              <svg
+              <svg class="animate-bounce w-6 h-6"
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
                 fill="none"
@@ -93,9 +96,12 @@
                   d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                 />
               </svg>
+              
+              
             </button>
             <button class="btn btn-ghost btn-circle">
-              <div class="indicator">
+              
+              <div class="indicator ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -121,6 +127,10 @@
 
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
             <button class="btn btn-square btn-ghost">
+              <span class="relative flex h-3 w-3">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+              </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -162,6 +172,7 @@
       </section>
     </header>
     <main>
+      <!-- services  -->
       <section class="services  lg:p-36 py-12 px-4 mx-auto">
         <h1 class="text-accent text-2xl lg:text-4xl font-bold mb-8 lg:mb-12">Services</h1>
         <div class="card-cotainer grid grid-cols-1 lg:grid-cols-3 justify-center gap-4">
@@ -413,33 +424,36 @@
             </div>
           </div>
         </div>
+        
       </section>
       
       <!-- grocery news  -->
-      <section class="flex justify-center relative top-60">
-        <div class="card bg-secondary max-w-sm lg:max-w-7xl lg:flex lg:flex-row gap-4 lg:gap-32 shadow-xl">
-          <figure class="px-10 pt-10">
-            <img
-              src="c2-assets/vegetable-busket.png"
-              alt="vegetable-busket"
-              class="max-w-56 lg:max-w-xl" />
-          </figure>
-          <div class="card-body flex justify-center items-center lg:justify-start lg:items-start lg:mt-20 p-4 pl-0 lg:mr-24">
-            <h2 class="card-title text-2xl lg:text-4xl text-accent lg:text-black ">Get Grocery News</h2>
-            <p class=" text-base text-center lg:text-left lg:text-xl">Exclusive training tips, ticks, product deals and more.</p>
-            <form class=" gap-2 bg-white p-4 w-3/4 rounded-lg shadow-md my-4 lg:my-7 ml-7 lg:ml-0 flex-col">
-              <input type="email" placeholder="Enter email...." required/>
-            </form>
-            <button class="btn bg-accent text-white max-w-40 ">Subscribe</button>
+      <div class="flex justify-center relative top-60">
+          <div class="card bg-secondary max-w-sm lg:max-w-7xl lg:flex lg:flex-row gap-4 lg:gap-32 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="c2-assets/vegetable-busket.png"
+                alt="vegetable-busket"
+                class="max-w-56 lg:max-w-xl" />
+            </figure>
+            <div class="card-body flex justify-center items-center lg:justify-start lg:items-start lg:mt-20 p-4 pl-0 lg:mr-24">
+              <h2 class="card-title text-2xl lg:text-4xl text-accent lg:text-black ">Get Grocery News</h2>
+              <p class=" text-base text-center lg:text-left lg:text-xl">Exclusive training tips, ticks, product deals and more.</p>
+              <form class=" gap-2 bg-white p-4 w-3/4 rounded-lg shadow-md my-4 lg:my-7 ml-7 lg:ml-0 flex-col">
+                <input type="email" placeholder="Enter email...." required/>
+              </form>
+              <button class="btn bg-accent text-white max-w-40 ">Subscribe</button>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+      
     </main>
-    <footer class="bg-accent flex lg:flex-row justify-between flex-end p-36 pt-96 text-white">
-        <div class="footer-logo">
+    <!-- footer section  -->
+    <footer class="bg-accent grid lg:grid-cols-3 p-5 lg:p-36 pt-80 lg:pt-96 text-white gap-8">
+        
+      <div class="footer-logo">
           <img src="c2-assets/logo-footer.png" alt="logo">
-          <p class="max-w-sm text-xl opacity-70">
+          <p class="max-w-sm text-xl opacity-70 mt-3">
             We are a team of dedicated professionals delivering high quality
             products to our customers.
           </p>
@@ -451,8 +465,8 @@
                 <li>Contact us</li>
             </ul>
         </div>
-        <div class="footer-contact grid justify-end">
-            <h3 class="text-xl">Follow Us</h3>
+        <div class="footer-contact grid lg:justify-end pb-12 lg:pb-0">
+            <h3 class="text-xl mb-3">Follow Us</h3>
             <ul class="flex gap-7">
                 <li><img src="c2-assets/fb.png"      alt="fb"></li>
                 <li><img src="c2-assets/twitter.png" alt="twitter"></li>
