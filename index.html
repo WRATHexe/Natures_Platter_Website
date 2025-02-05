@@ -48,9 +48,14 @@
       .poppins{
         font-family: "Poppins", serif;
       }
+      @layer components {
+        section > h2 {
+          @apply text-2xl lg:text-4xl font-bold;
+        }
+      }
     </style>
   </head>
-  <body class="sora">
+  <body class="sora text-sm lg:text-base">
     <header class="bg-gradient-to-t from-secondary to-white w-full">
       <section class="navmenu">
         <div
@@ -138,7 +143,7 @@
         <div class="hero w-full">
           <div class="hero-content text-center pb-0">
             <div class="max-w-3xl mx-auto">
-              <h1 class="text-5xl font-bold">
+              <h1 class="text-3xl lg:text-5xl font-bold">
                 Freshness <span class="text-accent">You Can Count</span> On,
                 Prices You’ll Love!
               </h1>
@@ -157,10 +162,10 @@
       </section>
     </header>
     <main>
-      <section class="services p-36 mx-auto">
-        <h1 class="text-accent text-4xl mb-12 text-left">Services</h1>
-        <div class="card-cotainer flex justify-center gap-4">
-          <div class="card bg-secondary w-96 shadow-xl">
+      <section class="services  lg:p-36 py-12 px-4 mx-auto">
+        <h1 class="text-accent text-2xl lg:text-4xl font-bold mb-8 lg:mb-12">Services</h1>
+        <div class="card-cotainer grid grid-cols-1 lg:grid-cols-3 justify-center gap-4">
+          <div class="card bg-secondary shadow-xl">
             <figure class="px-10 pt-10">
               <img
                 src="c2-assets/service.png"
@@ -177,7 +182,7 @@
               <div class="card-actions"></div>
             </div>
           </div>
-          <div class="card bg-secondary w-96 shadow-xl">
+          <div class="card bg-secondary shadow-xl">
             <figure class="px-10 pt-10">
               <img
                 src="c2-assets/delivery.png"
@@ -194,7 +199,7 @@
               <div class="card-actions"></div>
             </div>
           </div>
-          <div class="card bg-secondary w-96 shadow-xl">
+          <div class="card bg-secondary shadow-xl">
             <figure class="px-10 pt-10">
               <img
                 src="c2-assets/healthy.png"
@@ -213,12 +218,12 @@
           </div>
         </div>
       </section>
-
-      <section class="products bg-secondary p-36">
-        <h1 class="text-accent text-4xl mb-12 text-left">Popular Products</h1>
+      <!-- popular products  -->
+      <section class="products bg-secondary lg:p-36 py-12 px-4 mx-auto">
+        <h1 class="text-accent text-2xl lg:text-4xl font-bold mb-8 lg:mb-12">Popular Products</h1>
         <!-- promotional card  -->
-        <div class="sm:flex gap-3">
-          <div class="card bg-gradient-to-br from-accent to-white max-w-md shadow-l">
+        <div class="lg:flex  gap-3">
+          <div class="card bg-gradient-to-br from-accent to-white lg:max-w-md mb-6 lg:mb-0 shadow-l">
             <div class="card-body pb-0">
               <h2 class="card-title text-white">30% off</h2>
               <p class="text-white max-w-64">
@@ -246,12 +251,12 @@
               <img
                   src="c2-assets/onion.png"
                   alt="onion"
-                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+                  class="rounded-xl bg-secondary size-100% p-2 m-3" />
               <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
                 <div class="flex justify-start items-center gap-2 ">
                   <span class="text-yellow-500">★ </span> 4.5
                 </div>
-                <h2 class="card-title text-xl ">Onion 1 KG</h2>
+                <h2 class="card-title text-base lg:text-xl ">Onion 1 KG</h2>
                 <p class="text-left ">$39.99</p>
               </div>  
             </div>
@@ -261,12 +266,12 @@
               <img
                   src="c2-assets/tomato.png"
                   alt="tomato"
-                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+                  class="rounded-xl bg-secondary size-100% p-2 m-3" />
               <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
                 <div class="flex justify-start items-center gap-2 ">
                   <span class="text-yellow-500">★ </span> 4.5
                 </div>
-                <h2 class="card-title text-xl ">TOMATO 500 g</h2>
+                <h2 class="card-title text-base lg:text-xl ">Tomato 500 g</h2>
                 <p class="text-left ">$34.99</p>
               </div>  
             </div>
@@ -274,14 +279,14 @@
             <!-- potato  -->
             <div class="card flex flex-row items-center bg-white shadow-xl">
               <img
-                  src="c2-assets/onion.png"
+                  src="c2-assets/potato.png"
                   alt="onion"
-                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+                  class="rounded-xl bg-secondary size-100% p-2 m-3" />
               <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
                 <div class="flex justify-start items-center gap-2 ">
                   <span class="text-yellow-500">★ </span> 4.5
                 </div>
-                <h2 class="card-title text-xl ">POTATO 1 KG</h2>
+                <h2 class="card-title text-base lg:text-xl ">Potato 1 KG</h2>
                 <p class="text-left ">$29.99</p>
               </div>  
             </div>
@@ -291,12 +296,12 @@
               <img
                   src="c2-assets/tomato.png"
                   alt="tomato"
-                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+                  class="rounded-xl bg-secondary size-100% p-2 m-3" />
               <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
                 <div class="flex justify-start items-center gap-2 ">
                   <span class="text-yellow-500">★ </span> 4.5
                 </div>
-                <h2 class="card-title text-xl ">TOMATO 500 g</h2>
+                <h2 class="card-title text-base lg:text-xl ">Tomato 500 g</h2>
                 <p class="text-left ">$34.99</p>
               </div>  
             </div>
@@ -306,28 +311,28 @@
               <img
                   src="c2-assets/onion.png"
                   alt="onion"
-                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+                  class="rounded-xl bg-secondary size-100% p-2 m-3" />
               <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
                 <div class="flex justify-start items-center gap-2 ">
                   <span class="text-yellow-500">★ </span> 4.5
                 </div>
-                <h2 class="card-title text-xl ">Onion 1 KG</h2>
+                <h2 class="card-title text-base lg:text-xl ">Onion 1 KG</h2>
                 <p class="text-left ">$39.99</p>
               </div>  
             </div>
 
-            <!-- potato  -->
+            <!-- tomato  -->
             <div class="card flex flex-row items-center bg-white shadow-xl">
               <img
-                  src="c2-assets/onion.png"
-                  alt="onion"
-                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+                  src="c2-assets/tomato.png"
+                  alt="tomato"
+                  class="rounded-xl bg-secondary size-100% p-2 m-3" />
               <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
                 <div class="flex justify-start items-center gap-2 ">
                   <span class="text-yellow-500">★ </span> 4.5
                 </div>
-                <h2 class="card-title text-xl ">POTATO 1 KG</h2>
-                <p class="text-left ">$29.99</p>
+                <h2 class="card-title text-base lg:text-xl ">Tomato 500 g</h2>
+                <p class="text-left ">$34.99</p>
               </div>  
             </div>
 
@@ -336,12 +341,12 @@
               <img
                   src="c2-assets/onion.png"
                   alt="onion"
-                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+                  class="rounded-xl bg-secondary size-100% p-2 m-3" />
               <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
                 <div class="flex justify-start items-center gap-2 ">
                   <span class="text-yellow-500">★ </span> 4.5
                 </div>
-                <h2 class="card-title text-xl ">Onion 1 KG</h2>
+                <h2 class="card-title text-base lg:text-xl ">Onion 1 KG</h2>
                 <p class="text-left ">$39.99</p>
               </div>  
             </div>
@@ -349,66 +354,112 @@
             <!-- potato  -->
             <div class="card flex flex-row items-center bg-white shadow-xl">
               <img
-                  src="c2-assets/onion.png"
+                  src="c2-assets/potato.png"
                   alt="onion"
-                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+                  class="rounded-xl bg-secondary size-100% p-2 m-3" />
               <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
                 <div class="flex justify-start items-center gap-2 ">
                   <span class="text-yellow-500">★ </span> 4.5
                 </div>
-                <h2 class="card-title text-xl ">POTATO 1 KG</h2>
+                <h2 class="card-title text-base lg:text-xl ">Potato 1 KG</h2>
                 <p class="text-left ">$29.99</p>
               </div>  
             </div>
 
             <!-- potato  -->
-            <div class="card flex flex-row items-center bg-white shadow-xl">
+            <div class="card hidden lg:flex flex-row items-center bg-white shadow-xl">
               <img
-                  src="c2-assets/onion.png"
+                  src="c2-assets/potato.png"
                   alt="onion"
-                  class="rounded-xl bg-secondary size-100% p-2 m-4" />
+                  class="rounded-xl bg-secondary size-100% p-2 m-3" />
               <div class="card-body flex-1 justify-start text-center  p-0 mx-auto ml-0 my-auto">
                 <div class="flex justify-start items-center gap-2 ">
                   <span class="text-yellow-500">★ </span> 4.5
                 </div>
-                <h2 class="card-title text-xl ">POTATO 1 KG</h2>
+                <h2 class="card-title text-base lg:text-xl ">Potato 1 KG</h2>
                 <p class="text-left ">$29.99</p>
               </div>  
             </div>
+              </div>  
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- arrivals and offers -->
-      <section class="offers p-36 mx-auto text-white mb-96 poppins" >
-        <h1 class="text-accent text-4xl mb-12 text-left">Arrival & Offers</h1>
+      <section class="offers lg:p-36 py-12 px-4 pb-0 mx-auto text-white poppins" >
+        <h1 class="text-accent text-2xl lg:text-4xl font-bold mb-8 lg:mb-12">Arrival & Offers</h1>
 
-        <div class="flex justify-center gap-5">
-          <div class="card bg-arrival1 flex flex-1 flex-row text-left gap ">
-            <div class="flex-1 py-12 pl-10">
-              <img src="c2-assets/dawat-logo.png" alt="dawat logo"class="max-w-62"/>
-            <button class="rounded-3xl px-8 text-2xl bg-arrival1Title py-4 my-7 px-auto">Cook Exotic Dishes</button>
-            <p class="text-5xl">UP to <span class="font-bold">20% OFF</span></p>
+        <div class=" flex flex-col lg:flex-row justify-center flex-start gap-5 ">
+          <div class="card bg-arrival1 flex flex-1 flex-row gap ">
+            <div class="flex-1 py-6 lg:py-12 pl-4 lg:pl-10">
+              <img src="c2-assets/dawat-logo.png" alt="dawat logo"class="max-w-28 lg:max-w-64"/>
+            <button class="rounded-3xl px-5 lg:px-8 text-sm lg:text-2xl py-2 lg:py-4 bg-arrival1Title my-3 lg:my-7 px-auto">Cook Exotic Dishes</button>
+            <p class="text-2xl lg:text-4xl">UP to <span class="font-bold">20% OFF</span></p>
             </div>
             <div class="flex flex-end items-end">
-              <img src="c2-assets/dawat-mock-up.png" alt="india gate rice" class=" mt-8 size-fit"/>
+              <img src="c2-assets/dawat-mock-up.png" alt="india gate rice" class=" lg:mt-8 size-40 lg:size-80"/>
             </div>
           </div>
 
-          <div class="card bg-arrival2 flex max-w-lg flex-row text-left gap ">
-            <div class="flex-1 py-12 pl-10">
-              <img src="c2-assets/india-gate-logo.png" alt="dawat logo"class="max-w-24"/>
-            <button class="rounded-3xl px-8 text-2xl bg-arrival2Title py-4 my-7 px-auto">worlds no.1 rice</button>
-            <p class="text-4xl">UP to <span class="font-bold">40% OFF</span></p>
+          <div class="card bg-arrival2 flex max-w-lg flex-row gap-5 ">
+            <div class="flex-1 py-6 lg:py-12 pl-4 lg:pl-10">
+              <img src="c2-assets/india-gate-logo.png" alt="dawat logo"class="max-w-16 lg:max-w-24"/>
+            <button class="rounded-3xl px-5 lg:px-8 text-sm lg:text-2xl py-2 lg:py-4 bg-arrival2Title my-3 lg:my-7 px-auto">worlds no.1 rice</button>
+            <p class="text-2xl lg:text-4xl">UP to <span class="font-bold">40% OFF</span></p>
             </div>
             <div class="flex flex-end items-end">
-              <img src="c2-assets/india-gate-mock-up.png" alt="india gate rice" class="mt-5 mr-3 size-fit"/>
+              <img src="c2-assets/india-gate-mock-up.png" alt="india gate rice" class="lg:mt-5 mr-3 max-w-28 lg:size-fit"/>
             </div>
           </div>
         </div>
       </section>
       
-
+      <!-- grocery news  -->
+      <section class="flex justify-center relative top-60">
+        <div class="card bg-secondary max-w-sm lg:max-w-7xl lg:flex lg:flex-row gap-4 lg:gap-32 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="c2-assets/vegetable-busket.png"
+              alt="vegetable-busket"
+              class="max-w-56 lg:max-w-xl" />
+          </figure>
+          <div class="card-body flex justify-center items-center lg:justify-start lg:items-start lg:mt-20 p-4 pl-0 lg:mr-24">
+            <h2 class="card-title text-2xl lg:text-4xl text-accent lg:text-black ">Get Grocery News</h2>
+            <p class=" text-base text-center lg:text-left lg:text-xl">Exclusive training tips, ticks, product deals and more.</p>
+            <form class=" gap-2 bg-white p-4 w-3/4 rounded-lg shadow-md my-4 lg:my-7 ml-7 lg:ml-0 flex-col">
+              <input type="email" placeholder="Enter email...." required/>
+            </form>
+            <button class="btn bg-accent text-white max-w-40 ">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="bg-accent flex lg:flex-row justify-between flex-end p-36 pt-96 text-white">
+        <div class="footer-logo">
+          <img src="c2-assets/logo-footer.png" alt="logo">
+          <p class="max-w-sm text-xl opacity-70">
+            We are a team of dedicated professionals delivering high quality
+            products to our customers.
+          </p>
+        </div>
+        <div class="footer-nav">
+            <ul class="text-xl grid gap-8">
+                <li>Product</li>
+                <li>Service</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+        <div class="footer-contact grid justify-end">
+            <h3 class="text-xl">Follow Us</h3>
+            <ul class="flex gap-7">
+                <li><img src="c2-assets/fb.png"      alt="fb"></li>
+                <li><img src="c2-assets/twitter.png" alt="twitter"></li>
+                <li><img src="c2-assets/google+.png" alt="google+"></li>
+            </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
